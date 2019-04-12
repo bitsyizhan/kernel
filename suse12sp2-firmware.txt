@@ -1,0 +1,1403 @@
+.
+├── 3com
+│   └── 3C359.bin
+├── 4.4.21-69-default
+│   ├── 3com
+│   │   └── typhoon.bin
+│   ├── acenic
+│   │   ├── tg1.bin
+│   │   └── tg2.bin
+│   ├── adaptec
+│   │   ├── starfire_rx.bin
+│   │   └── starfire_tx.bin
+│   ├── atmsar11.fw
+│   ├── av7110
+│   │   └── bootcode.bin
+│   ├── bnx2
+│   │   ├── bnx2-mips-06-6.2.1.fw
+│   │   ├── bnx2-mips-09-6.2.1a.fw
+│   │   ├── bnx2-rv2p-06-6.0.15.fw
+│   │   ├── bnx2-rv2p-09-6.0.17.fw
+│   │   └── bnx2-rv2p-09ax-6.0.17.fw
+│   ├── bnx2x
+│   │   ├── bnx2x-e1-6.2.9.0.fw
+│   │   ├── bnx2x-e1h-6.2.9.0.fw
+│   │   └── bnx2x-e2-6.2.9.0.fw
+│   ├── cpia2
+│   │   └── stv0672_vp4.bin
+│   ├── cxgb3
+│   │   ├── ael2005_opt_edc.bin
+│   │   ├── ael2005_twx_edc.bin
+│   │   ├── ael2020_twx_edc.bin
+│   │   ├── t3b_psram-1.1.0.bin
+│   │   └── t3c_psram-1.1.0.bin
+│   ├── e100
+│   │   ├── d101m_ucode.bin
+│   │   ├── d101s_ucode.bin
+│   │   └── d102e_ucode.bin
+│   ├── edgeport
+│   │   ├── boot2.fw
+│   │   ├── boot.fw
+│   │   ├── down2.fw
+│   │   ├── down3.bin
+│   │   └── down.fw
+│   ├── emi26
+│   │   ├── bitstream.fw
+│   │   ├── firmware.fw
+│   │   └── loader.fw
+│   ├── emi62
+│   │   ├── bitstream.fw
+│   │   ├── loader.fw
+│   │   ├── midi.fw
+│   │   └── spdif.fw
+│   ├── ess
+│   │   ├── maestro3_assp_kernel.fw
+│   │   └── maestro3_assp_minisrc.fw
+│   ├── kaweth
+│   │   ├── new_code.bin
+│   │   ├── new_code_fix.bin
+│   │   ├── trigger_code.bin
+│   │   └── trigger_code_fix.bin
+│   ├── keyspan_pda
+│   │   ├── keyspan_pda.fw
+│   │   └── xircom_pgs.fw
+│   ├── korg
+│   │   └── k1212.dsp
+│   ├── matrox
+│   │   ├── g200_warp.fw
+│   │   └── g400_warp.fw
+│   ├── mts_cdma.fw
+│   ├── mts_edge.fw
+│   ├── mts_gsm.fw
+│   ├── qlogic
+│   │   ├── 1040.bin
+│   │   ├── 12160.bin
+│   │   ├── 1280.bin
+│   │   └── sd7220.fw
+│   ├── r128
+│   │   └── r128_cce.bin
+│   ├── radeon
+│   │   ├── R100_cp.bin
+│   │   ├── R200_cp.bin
+│   │   ├── R300_cp.bin
+│   │   ├── R420_cp.bin
+│   │   ├── R520_cp.bin
+│   │   ├── R600_me.bin
+│   │   ├── R600_pfp.bin
+│   │   ├── RS600_cp.bin
+│   │   ├── RS690_cp.bin
+│   │   ├── RS780_me.bin
+│   │   ├── RS780_pfp.bin
+│   │   ├── RV610_me.bin
+│   │   ├── RV610_pfp.bin
+│   │   ├── RV620_me.bin
+│   │   ├── RV620_pfp.bin
+│   │   ├── RV630_me.bin
+│   │   ├── RV630_pfp.bin
+│   │   ├── RV635_me.bin
+│   │   ├── RV635_pfp.bin
+│   │   ├── RV670_me.bin
+│   │   ├── RV670_pfp.bin
+│   │   ├── RV710_me.bin
+│   │   ├── RV710_pfp.bin
+│   │   ├── RV730_me.bin
+│   │   ├── RV730_pfp.bin
+│   │   ├── RV770_me.bin
+│   │   └── RV770_pfp.bin
+│   ├── sun
+│   │   └── cassini.bin
+│   ├── tehuti
+│   │   └── bdx.bin
+│   ├── ti_3410.fw
+│   ├── ti_5052.fw
+│   ├── tigon
+│   │   ├── tg3.bin
+│   │   ├── tg3_tso5.bin
+│   │   └── tg3_tso.bin
+│   ├── ttusb-budget
+│   │   └── dspbootcode.bin
+│   ├── whiteheat.fw
+│   ├── whiteheat_loader.fw
+│   └── yamaha
+│       ├── ds1_ctrl.fw
+│       ├── ds1_dsp.fw
+│       └── ds1e_ctrl.fw
+├── acenic
+├── adaptec
+├── advansys
+│   ├── 3550.bin
+│   ├── 38C0800.bin
+│   ├── 38C1600.bin
+│   └── mcode.bin
+├── agere_ap_fw.bin
+├── agere_sta_fw.bin
+├── aic94xx-seq.fw
+├── amdgpu
+│   ├── carrizo_ce.bin
+│   ├── carrizo_me.bin
+│   ├── carrizo_mec2.bin
+│   ├── carrizo_mec.bin
+│   ├── carrizo_pfp.bin
+│   ├── carrizo_rlc.bin
+│   ├── carrizo_sdma1.bin
+│   ├── carrizo_sdma.bin
+│   ├── carrizo_uvd.bin
+│   ├── carrizo_vce.bin
+│   ├── fiji_ce.bin
+│   ├── fiji_mc.bin
+│   ├── fiji_me.bin
+│   ├── fiji_mec2.bin
+│   ├── fiji_mec.bin
+│   ├── fiji_pfp.bin
+│   ├── fiji_rlc.bin
+│   ├── fiji_sdma1.bin
+│   ├── fiji_sdma.bin
+│   ├── fiji_smc.bin
+│   ├── fiji_uvd.bin
+│   ├── fiji_vce.bin
+│   ├── polaris10_ce.bin
+│   ├── polaris10_mc.bin
+│   ├── polaris10_me.bin
+│   ├── polaris10_mec2.bin
+│   ├── polaris10_mec.bin
+│   ├── polaris10_pfp.bin
+│   ├── polaris10_rlc.bin
+│   ├── polaris10_sdma1.bin
+│   ├── polaris10_sdma.bin
+│   ├── polaris10_smc.bin
+│   ├── polaris10_smc_sk.bin
+│   ├── polaris10_uvd.bin
+│   ├── polaris10_vce.bin
+│   ├── polaris11_ce.bin
+│   ├── polaris11_mc.bin
+│   ├── polaris11_me.bin
+│   ├── polaris11_mec2.bin
+│   ├── polaris11_mec.bin
+│   ├── polaris11_pfp.bin
+│   ├── polaris11_rlc.bin
+│   ├── polaris11_sdma1.bin
+│   ├── polaris11_sdma.bin
+│   ├── polaris11_smc.bin
+│   ├── polaris11_smc_sk.bin
+│   ├── polaris11_uvd.bin
+│   ├── polaris11_vce.bin
+│   ├── stoney_ce.bin
+│   ├── stoney_me.bin
+│   ├── stoney_mec.bin
+│   ├── stoney_pfp.bin
+│   ├── stoney_rlc.bin
+│   ├── stoney_sdma.bin
+│   ├── stoney_uvd.bin
+│   ├── stoney_vce.bin
+│   ├── tonga_ce.bin
+│   ├── tonga_mc.bin
+│   ├── tonga_me.bin
+│   ├── tonga_mec2.bin
+│   ├── tonga_mec.bin
+│   ├── tonga_pfp.bin
+│   ├── tonga_rlc.bin
+│   ├── tonga_sdma1.bin
+│   ├── tonga_sdma.bin
+│   ├── tonga_smc.bin
+│   ├── tonga_uvd.bin
+│   ├── tonga_vce.bin
+│   ├── topaz_ce.bin
+│   ├── topaz_mc.bin
+│   ├── topaz_me.bin
+│   ├── topaz_mec2.bin
+│   ├── topaz_mec.bin
+│   ├── topaz_pfp.bin
+│   ├── topaz_rlc.bin
+│   ├── topaz_sdma1.bin
+│   ├── topaz_sdma.bin
+│   └── topaz_smc.bin
+├── ar3k
+│   ├── 1020200
+│   │   ├── ar3kbdaddr.pst
+│   │   ├── PS_ASIC.pst
+│   │   └── RamPatch.txt
+│   ├── 1020201
+│   │   ├── PS_ASIC.pst
+│   │   └── RamPatch.txt
+│   ├── 1020201coex
+│   │   └── ramps_0x01020201_26_HighPriority.dfu
+│   ├── 30000
+│   │   ├── ar3kbdaddr.pst
+│   │   ├── PS_ASIC.pst
+│   │   └── RamPatch.txt
+│   ├── 30101
+│   │   ├── ar3kbdaddr.pst
+│   │   ├── PS_ASIC.pst
+│   │   └── RamPatch.txt
+│   ├── 30101coex
+│   │   ├── ar3kbdaddr.pst
+│   │   ├── PS_ASIC_aclHighPri.pst
+│   │   ├── PS_ASIC_aclLowPri.pst
+│   │   ├── PS_ASIC.pst
+│   │   └── RamPatch.txt
+│   ├── AthrBT_0x01020001.dfu
+│   ├── AthrBT_0x01020200.dfu
+│   ├── AthrBT_0x01020201.dfu
+│   ├── AthrBT_0x11020000.dfu
+│   ├── AthrBT_0x11020100.dfu
+│   ├── AthrBT_0x31010000.dfu
+│   ├── AthrBT_0x31010100.dfu
+│   ├── AthrBT_0x41020000.dfu
+│   ├── ramps_0x01020001_26.dfu
+│   ├── ramps_0x01020200_26.dfu
+│   ├── ramps_0x01020200_40.dfu
+│   ├── ramps_0x01020201_26.dfu
+│   ├── ramps_0x01020201_40.dfu
+│   ├── ramps_0x11020000_40.dfu
+│   ├── ramps_0x11020100_40.dfu
+│   ├── ramps_0x31010000_40.dfu
+│   ├── ramps_0x31010100_40.dfu
+│   └── ramps_0x41020000_40.dfu
+├── ar5523.bin
+├── ar7010_1_1.fw
+├── ar7010.fw
+├── ar9170-1.fw
+├── ar9170-2.fw
+├── ar9271.fw
+├── as102_data1_st.hex
+├── as102_data2_st.hex
+├── ast_dp501_fw.bin
+├── ath10k
+│   ├── QCA6174
+│   │   ├── hw2.1
+│   │   │   ├── board-2.bin
+│   │   │   ├── board.bin
+│   │   │   ├── firmware-5.bin
+│   │   │   └── notice_ath10k_firmware-5.txt
+│   │   └── hw3.0
+│   │       ├── board-2.bin
+│   │       ├── board.bin
+│   │       ├── firmware-4.bin
+│   │       └── notice_ath10k_firmware-4.txt
+│   ├── QCA9377
+│   │   └── hw1.0
+│   │       ├── board-2.bin
+│   │       ├── board.bin
+│   │       ├── firmware-5.bin
+│   │       └── notice_ath10k_firmware-5.txt
+│   ├── QCA988X
+│   │   └── hw2.0
+│   │       ├── board.bin
+│   │       ├── firmware-4.bin
+│   │       ├── firmware-5.bin
+│   │       ├── notice_ath10k_firmware-4.txt
+│   │       └── notice_ath10k_firmware-5.txt
+│   └── QCA99X0
+│       └── hw2.0
+│           ├── board.bin
+│           ├── firmware-5.bin
+│           └── notice_ath10k_firmware-5.txt
+├── ath3k-1.fw
+├── ath6k
+│   ├── AR6002
+│   │   ├── athwlan.bin.z77
+│   │   ├── data.patch.hw2_0.bin
+│   │   ├── eeprom.bin
+│   │   └── eeprom.data
+│   ├── AR6003
+│   │   ├── hw1.0
+│   │   │   ├── athwlan.bin.z77
+│   │   │   ├── bdata.SD31.bin
+│   │   │   ├── bdata.SD32.bin
+│   │   │   ├── bdata.WB31.bin
+│   │   │   ├── data.patch.bin
+│   │   │   └── otp.bin.z77
+│   │   ├── hw2.0
+│   │   │   ├── athwlan.bin.z77
+│   │   │   ├── bdata.SD31.bin
+│   │   │   ├── bdata.SD32.bin
+│   │   │   ├── bdata.WB31.bin
+│   │   │   ├── data.patch.bin
+│   │   │   └── otp.bin.z77
+│   │   └── hw2.1.1
+│   │       ├── athwlan.bin
+│   │       ├── bdata.SD31.bin
+│   │       ├── bdata.SD32.bin
+│   │       ├── bdata.WB31.bin
+│   │       ├── data.patch.bin
+│   │       ├── endpointping.bin
+│   │       ├── fw-2.bin
+│   │       ├── fw-3.bin
+│   │       └── otp.bin
+│   ├── AR6003.1
+│   │   └── hw2.1.1
+│   │       ├── athwlan.bin
+│   │       ├── bdata.SD31.bin
+│   │       ├── bdata.SD32.bin
+│   │       ├── bdata.WB31.bin
+│   │       ├── data.patch.bin
+│   │       ├── endpointping.bin
+│   │       └── otp.bin
+│   └── AR6004
+│       ├── hw1.2
+│       │   ├── bdata.bin
+│       │   └── fw-2.bin
+│       └── hw1.3
+│           ├── bdata.bin
+│           └── fw-3.bin
+├── ath9k_htc
+│   ├── htc_7010-1.4.0.fw
+│   └── htc_9271-1.4.0.fw
+├── atmel
+│   ├── wilc1000_ap_fw.bin
+│   ├── wilc1000_fw.bin
+│   └── wilc1000_p2p_fw.bin
+├── atmel_at76c502_3com.bin
+├── atmel_at76c502_3com-wpa.bin
+├── atmel_at76c502.bin
+├── atmel_at76c502d.bin
+├── atmel_at76c502d-wpa.bin
+├── atmel_at76c502e.bin
+├── atmel_at76c502e-wpa.bin
+├── atmel_at76c502-wpa.bin
+├── atmel_at76c503-i3861.bin
+├── atmel_at76c503-i3863.bin
+├── atmel_at76c503-rfmd-0.90.2-140.bin
+├── atmel_at76c503-rfmd-acc.bin
+├── atmel_at76c503-rfmd.bin
+├── atmel_at76c504_2958-wpa.bin
+├── atmel_at76c504a_2958-wpa.bin
+├── atmel_at76c504.bin
+├── atmel_at76c504c-wpa.bin
+├── atmel_at76c505a-rfmd2958.bin
+├── atmel_at76c505-rfmd2958.bin
+├── atmel_at76c505-rfmd.bin
+├── atmel_at76c506.bin
+├── atmel_at76c506-wpa.bin
+├── atusb
+│   ├── atusb-0.2.dfu
+│   └── ChangeLog
+├── av7110
+│   ├── Boot.S
+│   └── Makefile
+├── bnx2
+│   ├── bnx2-mips-06-4.6.16.fw
+│   ├── bnx2-mips-06-5.0.0.j3.fw
+│   ├── bnx2-mips-06-5.0.0.j6.fw
+│   ├── bnx2-mips-06-6.0.15.fw
+│   ├── bnx2-mips-06-6.2.3.fw
+│   ├── bnx2-mips-09-4.6.17.fw
+│   ├── bnx2-mips-09-5.0.0.j15.fw
+│   ├── bnx2-mips-09-5.0.0.j3.fw
+│   ├── bnx2-mips-09-5.0.0.j9.fw
+│   ├── bnx2-mips-09-6.0.17.fw
+│   ├── bnx2-mips-09-6.2.1b.fw
+│   ├── bnx2-mips-09-6.2.1.fw
+│   ├── bnx2-rv2p-06-4.6.16.fw
+│   ├── bnx2-rv2p-06-5.0.0.j3.fw
+│   ├── bnx2-rv2p-09-4.6.15.fw
+│   ├── bnx2-rv2p-09-5.0.0.j10.fw
+│   ├── bnx2-rv2p-09-5.0.0.j3.fw
+│   ├── bnx2-rv2p-09ax-5.0.0.j10.fw
+│   └── bnx2-rv2p-09ax-5.0.0.j3.fw
+├── bnx2x
+│   ├── bnx2x-e1-6.0.34.0.fw
+│   ├── bnx2x-e1-6.2.5.0.fw
+│   ├── bnx2x-e1-7.0.20.0.fw
+│   ├── bnx2x-e1-7.0.23.0.fw
+│   ├── bnx2x-e1-7.0.29.0.fw
+│   ├── bnx2x-e1-7.10.51.0.fw
+│   ├── bnx2x-e1-7.12.30.0.fw
+│   ├── bnx2x-e1-7.13.1.0.fw
+│   ├── bnx2x-e1-7.2.16.0.fw
+│   ├── bnx2x-e1-7.2.51.0.fw
+│   ├── bnx2x-e1-7.8.17.0.fw
+│   ├── bnx2x-e1-7.8.19.0.fw
+│   ├── bnx2x-e1-7.8.2.0.fw
+│   ├── bnx2x-e1h-6.0.34.0.fw
+│   ├── bnx2x-e1h-6.2.5.0.fw
+│   ├── bnx2x-e1h-7.0.20.0.fw
+│   ├── bnx2x-e1h-7.0.23.0.fw
+│   ├── bnx2x-e1h-7.0.29.0.fw
+│   ├── bnx2x-e1h-7.10.51.0.fw
+│   ├── bnx2x-e1h-7.12.30.0.fw
+│   ├── bnx2x-e1h-7.13.1.0.fw
+│   ├── bnx2x-e1h-7.2.16.0.fw
+│   ├── bnx2x-e1h-7.2.51.0.fw
+│   ├── bnx2x-e1h-7.8.17.0.fw
+│   ├── bnx2x-e1h-7.8.19.0.fw
+│   ├── bnx2x-e1h-7.8.2.0.fw
+│   ├── bnx2x-e2-6.0.34.0.fw
+│   ├── bnx2x-e2-6.2.5.0.fw
+│   ├── bnx2x-e2-7.0.20.0.fw
+│   ├── bnx2x-e2-7.0.23.0.fw
+│   ├── bnx2x-e2-7.0.29.0.fw
+│   ├── bnx2x-e2-7.10.51.0.fw
+│   ├── bnx2x-e2-7.12.30.0.fw
+│   ├── bnx2x-e2-7.13.1.0.fw
+│   ├── bnx2x-e2-7.2.16.0.fw
+│   ├── bnx2x-e2-7.2.51.0.fw
+│   ├── bnx2x-e2-7.8.17.0.fw
+│   ├── bnx2x-e2-7.8.19.0.fw
+│   └── bnx2x-e2-7.8.2.0.fw
+├── bnx2x-e1-4.8.53.0.fw
+├── bnx2x-e1-5.2.13.0.fw
+├── bnx2x-e1-5.2.7.0.fw
+├── bnx2x-e1h-4.8.53.0.fw
+├── bnx2x-e1h-5.2.13.0.fw
+├── bnx2x-e1h-5.2.7.0.fw
+├── brcm
+│   ├── bcm4329-fullmac-4.bin
+│   ├── bcm43xx-0.fw
+│   ├── bcm43xx_hdr-0.fw
+│   ├── brcmfmac43143.bin
+│   ├── brcmfmac43143-sdio.bin
+│   ├── brcmfmac43236b.bin
+│   ├── brcmfmac43241b0-sdio.bin
+│   ├── brcmfmac43241b4-sdio.bin
+│   ├── brcmfmac43241b5-sdio.bin
+│   ├── brcmfmac43242a.bin
+│   ├── brcmfmac4329-sdio.bin
+│   ├── brcmfmac4330-sdio.bin
+│   ├── brcmfmac43340-sdio.bin
+│   ├── brcmfmac4334-sdio.bin
+│   ├── brcmfmac4335-sdio.bin
+│   ├── brcmfmac43362-sdio.bin
+│   ├── brcmfmac4339-sdio.bin
+│   ├── brcmfmac43455-sdio.bin
+│   ├── brcmfmac4350c2-pcie.bin
+│   ├── brcmfmac4350-pcie.bin
+│   ├── brcmfmac4354-sdio.bin
+│   ├── brcmfmac43569.bin
+│   ├── brcmfmac4356-pcie.bin
+│   ├── brcmfmac43570-pcie.bin
+│   ├── brcmfmac43602-pcie.ap.bin
+│   ├── brcmfmac43602-pcie.bin
+│   ├── brcmfmac4366b-pcie.bin
+│   └── brcmfmac4371-pcie.bin
+├── carl9170-1.fw
+├── cbfw-3.2.1.1.bin
+├── cbfw-3.2.3.0.bin
+├── cbfw-3.2.5.1.bin
+├── cis
+│   ├── 3CCFEM556.cis
+│   ├── 3CXEM556.cis
+│   ├── COMpad2.cis
+│   ├── COMpad4.cis
+│   ├── DP83903.cis
+│   ├── LA-PCM.cis
+│   ├── Makefile
+│   ├── MT5634ZLX.cis
+│   ├── NE2K.cis
+│   ├── PCMLM28.cis
+│   ├── PE-200.cis
+│   ├── PE520.cis
+│   ├── RS-COM-2P.cis
+│   ├── src
+│   │   ├── 3CCFEM556.cis
+│   │   ├── 3CXEM556.cis
+│   │   ├── COMpad2.cis
+│   │   ├── COMpad4.cis
+│   │   ├── DP83903.cis
+│   │   ├── LA-PCM.cis
+│   │   ├── MT5634ZLX.cis
+│   │   ├── NE2K.cis
+│   │   ├── PCMLM28.cis
+│   │   ├── PE-200.cis
+│   │   ├── PE520.cis
+│   │   ├── RS-COM-2P.cis
+│   │   └── tamarack.cis
+│   ├── SW_555_SER.cis
+│   ├── SW_7xx_SER.cis
+│   ├── SW_8xx_SER.cis
+│   └── tamarack.cis
+├── cmmb_vega_12mhz.inp
+├── cmmb_venice_12mhz.inp
+├── configure
+├── cpia2
+├── ct2fw-3.2.1.1.bin
+├── ct2fw-3.2.3.0.bin
+├── ct2fw-3.2.5.1.bin
+├── ctfw-3.2.1.1.bin
+├── ctfw-3.2.3.0.bin
+├── ctfw-3.2.5.1.bin
+├── cxgb3
+│   ├── t3fw-7.0.0.bin
+│   ├── t3fw-7.10.0.bin
+│   ├── t3fw-7.1.0.bin
+│   ├── t3fw-7.12.0.bin
+│   └── t3fw-7.4.0.bin
+├── cxgb4
+│   ├── aq1202_fw.cld
+│   ├── bcm8483.bin
+│   ├── t4fw-1.14.4.0.bin
+│   ├── t4fw-1.15.37.0.bin
+│   ├── t4fw.bin -> t4fw-1.15.37.0.bin
+│   ├── t5fw-1.14.4.0.bin
+│   ├── t5fw-1.15.37.0.bin
+│   └── t5fw.bin -> t5fw-1.15.37.0.bin
+├── dabusb
+│   ├── bitstream.bin
+│   └── firmware.fw
+├── dsp56k
+│   ├── bootstrap.asm
+│   ├── bootstrap.bin
+│   ├── concat-bootstrap.pl
+│   └── Makefile
+├── dvb-fe-xc4000-1.4.1.fw
+├── dvb-fe-xc5000-1.6.114.fw
+├── dvb-fe-xc5000c-4.1.30.7.fw
+├── dvb_nova_12mhz_b0.inp
+├── dvb_nova_12mhz.inp
+├── dvb-usb-dib0700-1.20.fw
+├── dvb-usb-it9135-01.fw
+├── dvb-usb-it9135-02.fw
+├── dvb-usb-terratec-h5-drxk.fw
+├── e100
+├── edgeport
+├── emi26
+├── emi62
+├── ene-ub6250
+│   ├── ms_init.bin
+│   ├── msp_rdwr.bin
+│   ├── ms_rdwr.bin
+│   ├── sd_init1.bin
+│   ├── sd_init2.bin
+│   └── sd_rdwr.bin
+├── ess
+├── f2255usb.bin
+├── go7007
+│   ├── go7007fw.bin
+│   ├── go7007tv.bin
+│   ├── lr192.fw
+│   ├── px-m402u.fw
+│   ├── px-tv402u.fw
+│   ├── s2250-1.fw
+│   ├── s2250-2.fw
+│   └── wis-startrek.fw
+├── GPL-3
+├── hfi1_dc8051.fw
+├── hfi1_fabric.fw
+├── hfi1_pcie.fw
+├── hfi1_sbus.fw
+├── htc_7010.fw
+├── htc_9271.fw
+├── i2400m-fw-usb-1.4.sbcf
+├── i2400m-fw-usb-1.5.sbcf
+├── i6050-fw-usb-1.5.sbcf
+├── i915
+│   ├── bxt_dmc_ver1_04.bin
+│   ├── bxt_dmc_ver1_05.bin
+│   ├── bxt_dmc_ver1_06.bin
+│   ├── bxt_dmc_ver1.bin -> bxt_dmc_ver1_06.bin
+│   ├── skl_dmc_ver1_23.bin
+│   ├── skl_dmc_ver1_26.bin
+│   ├── skl_dmc_ver1.bin -> skl_dmc_ver1_26.bin
+│   ├── skl_guc_ver1_1059.bin
+│   ├── skl_guc_ver1.bin -> skl_guc_ver1_1059.bin
+│   ├── skl_guc_ver4_3.bin
+│   ├── skl_guc_ver4.bin -> skl_guc_ver4_3.bin
+│   ├── skl_guc_ver6_1.bin
+│   └── skl_guc_ver6.bin -> skl_guc_ver6_1.bin
+├── intel
+│   ├── dsp_fw_release.bin -> dsp_fw_release_v927.bin
+│   ├── dsp_fw_release_v827.bin
+│   ├── dsp_fw_release_v869.bin
+│   ├── dsp_fw_release_v896.bin
+│   ├── dsp_fw_release_v927.bin
+│   ├── fw_sst_0f28.bin
+│   ├── fw_sst_0f28.bin-48kHz_i2s_master
+│   ├── fw_sst_22a8.bin
+│   ├── ibt-11-5.ddc
+│   ├── ibt-11-5.sfi
+│   ├── ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq
+│   ├── ibt-hw-37.7.10-fw-1.0.2.3.d.bseq
+│   ├── ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq
+│   ├── ibt-hw-37.7.10-fw-1.80.2.3.d.bseq
+│   ├── ibt-hw-37.7.bseq
+│   ├── ibt-hw-37.8.10-fw-1.10.2.27.d.bseq
+│   ├── ibt-hw-37.8.10-fw-1.10.3.11.e.bseq
+│   ├── ibt-hw-37.8.10-fw-22.50.19.14.f.bseq
+│   ├── ibt-hw-37.8.bseq
+│   └── IntcSST2.bin
+├── intelliport2.bin
+├── ipw2100-1.3.fw
+├── ipw2100-1.3-i.fw
+├── ipw2100-1.3-p.fw
+├── ipw2200-bss.fw
+├── ipw2200-ibss.fw
+├── ipw2200-sniffer.fw
+├── ipw-2.2-boot.fw
+├── ipw-2.2-bss.fw
+├── ipw-2.2-bss_ucode.fw
+├── ipw-2.2-ibss.fw
+├── ipw-2.2-ibss_ucode.fw
+├── ipw-2.3-boot.fw
+├── ipw-2.3-bss.fw
+├── ipw-2.3-bss_ucode.fw
+├── ipw-2.3-ibss.fw
+├── ipw-2.3-ibss_ucode.fw
+├── ipw-2.3-sniffer.fw
+├── ipw-2.3-sniffer_ucode.fw
+├── ipw-2.4-boot.fw
+├── ipw-2.4-bss.fw
+├── ipw-2.4-bss_ucode.fw
+├── ipw-2.4-ibss.fw
+├── ipw-2.4-ibss_ucode.fw
+├── ipw-2.4-sniffer.fw
+├── ipw-2.4-sniffer_ucode.fw
+├── isci
+│   ├── create_fw.c
+│   ├── create_fw.h
+│   ├── isci_firmware.bin
+│   ├── Makefile
+│   ├── probe_roms.h
+│   └── README
+├── isdbt_nova_12mhz_b0.inp
+├── isdbt_nova_12mhz.inp
+├── isdbt_rio.inp
+├── iwlwifi-1000-3.ucode
+├── iwlwifi-1000-5.ucode
+├── iwlwifi-100-5.ucode
+├── iwlwifi-105-6.ucode
+├── iwlwifi-135-6.ucode
+├── iwlwifi-2000-6.ucode
+├── iwlwifi-2030-6.ucode
+├── iwlwifi-3160-10.ucode
+├── iwlwifi-3160-12.ucode
+├── iwlwifi-3160-13.ucode
+├── iwlwifi-3160-16.ucode
+├── iwlwifi-3160-7.ucode
+├── iwlwifi-3160-8.ucode
+├── iwlwifi-3160-9.ucode
+├── iwlwifi-3168-21.ucode
+├── iwlwifi-3945-2.ucode
+├── iwlwifi-4965-2.ucode
+├── iwlwifi-5000-1.ucode
+├── iwlwifi-5000-2.ucode
+├── iwlwifi-5000-5.ucode
+├── iwlwifi-5150-2.ucode
+├── iwlwifi-6000-4.ucode
+├── iwlwifi-6000g2a-5.ucode
+├── iwlwifi-6000g2a-6.ucode
+├── iwlwifi-6000g2b-5.ucode
+├── iwlwifi-6000g2b-6.ucode
+├── iwlwifi-6050-4.ucode
+├── iwlwifi-6050-5.ucode
+├── iwlwifi-7260-10.ucode
+├── iwlwifi-7260-12.ucode
+├── iwlwifi-7260-13.ucode
+├── iwlwifi-7260-16.ucode
+├── iwlwifi-7260-7.ucode
+├── iwlwifi-7260-8.ucode
+├── iwlwifi-7260-9.ucode
+├── iwlwifi-7265-10.ucode
+├── iwlwifi-7265-12.ucode
+├── iwlwifi-7265-13.ucode
+├── iwlwifi-7265-16.ucode
+├── iwlwifi-7265-8.ucode
+├── iwlwifi-7265-9.ucode
+├── iwlwifi-7265D-10.ucode -> iwlwifi-7265-10.ucode
+├── iwlwifi-7265D-12.ucode
+├── iwlwifi-7265D-13.ucode
+├── iwlwifi-7265D-16.ucode
+├── iwlwifi-7265D-21.ucode
+├── iwlwifi-8000C-13.ucode
+├── iwlwifi-8000C-16.ucode
+├── iwlwifi-8000C-21.ucode
+├── iwlwifi-8265-21.ucode
+├── kaweth
+├── keyspan
+│   ├── mpr.fw
+│   ├── usa18x.fw
+│   ├── usa19.fw
+│   ├── usa19qi.fw
+│   ├── usa19qw.fw
+│   ├── usa19w.fw
+│   ├── usa28.fw
+│   ├── usa28xa.fw
+│   ├── usa28xb.fw
+│   ├── usa28x.fw
+│   ├── usa49w.fw
+│   └── usa49wlc.fw
+├── keyspan_pda
+│   ├── keyspan_pda.S
+│   ├── Makefile
+│   └── xircom_pgs.S
+├── korg
+├── lbtf_usb.bin
+├── lgs8g75.fw
+├── libertas
+│   ├── cf8381.bin
+│   ├── cf8381_helper.bin
+│   ├── cf8385.bin
+│   ├── cf8385_helper.bin
+│   ├── gspi8682.bin
+│   ├── gspi8682_helper.bin
+│   ├── gspi8686_v9.bin
+│   ├── gspi8686_v9_helper.bin
+│   ├── gspi8688.bin
+│   ├── gspi8688_helper.bin
+│   ├── lbtf_sdio.bin
+│   ├── sd8385.bin
+│   ├── sd8385_helper.bin
+│   ├── sd8682.bin
+│   ├── sd8682_helper.bin
+│   ├── sd8686_v8.bin
+│   ├── sd8686_v8_helper.bin
+│   ├── sd8686_v9.bin
+│   ├── sd8686_v9_helper.bin
+│   ├── sd8688.bin -> ../mrvl/sd8688.bin
+│   ├── sd8688_helper.bin -> ../mrvl/sd8688_helper.bin
+│   ├── usb8388_olpc.bin
+│   ├── usb8388_v5.bin
+│   ├── usb8388_v9.bin
+│   └── usb8682.bin
+├── LICENCE.Abilis
+├── LICENCE.adsp_sst
+├── LICENCE.agere
+├── LICENCE.atheros_firmware
+├── LICENCE.broadcom_bcm43xx
+├── LICENCE.ca0132
+├── LICENCE.cavium
+├── LICENCE.chelsio_firmware
+├── LICENCE.cw1200
+├── LICENCE.e100
+├── LICENCE.ene_firmware
+├── LICENCE.fw_sst_0f28
+├── LICENCE.go7007
+├── LICENCE.i2400m
+├── LICENCE.ibt_firmware
+├── LICENCE.IntcSST2
+├── LICENCE.it913x
+├── LICENCE.iwlwifi_firmware
+├── LICENCE.kaweth
+├── LICENCE.Marvell
+├── LICENCE.moxa
+├── LICENCE.mwl8335
+├── LICENCE.myri10ge_firmware
+├── LICENCE.nvidia
+├── LICENCE.OLPC
+├── LICENCE.open-ath9k-htc-firmware
+├── LICENCE.phanfw
+├── LICENCE.qat_firmware
+├── LICENCE.qla1280
+├── LICENCE.qla2xxx
+├── LICENCE.r8a779x_usb3
+├── LICENCE.ralink_a_mediatek_company_firmware
+├── LICENCE.ralink-firmware.txt
+├── LICENCE.rtlwifi_firmware.txt
+├── LICENCE.siano
+├── LICENCE.tda7706-firmware.txt
+├── LICENCE.ti-connectivity
+├── LICENCE.ti-keystone
+├── LICENCE.ueagle-atm4-firmware
+├── LICENCE.via_vt6656
+├── LICENCE.wl1251
+├── LICENCE.xc4000
+├── LICENCE.xc5000
+├── LICENCE.xc5000c
+├── LICENSE.amdgpu
+├── LICENSE.atmel
+├── LICENSE.dib0700
+├── LICENSE.hfi1_firmware
+├── LICENSE.i915
+├── LICENSE.ipw2200-fw
+├── LICENSE.ipw2x00
+├── LICENSE.QualcommAtheros_ar3k
+├── LICENSE.QualcommAtheros_ath10k
+├── LICENSE.radeon
+├── liquidio
+│   ├── lio_210nv_nic.bin
+│   ├── lio_210sv_nic.bin
+│   └── lio_410nv_nic.bin
+├── Makefile
+├── matrox
+├── moxa
+│   ├── moxa-1110.fw
+│   ├── moxa-1130.fw
+│   ├── moxa-1131.fw
+│   ├── moxa-1150.fw
+│   ├── moxa-1151.fw
+│   ├── moxa-1250.fw
+│   ├── moxa-1251.fw
+│   ├── moxa-1410.fw
+│   ├── moxa-1450.fw
+│   ├── moxa-1451.fw
+│   ├── moxa-1613.fw
+│   ├── moxa-1618.fw
+│   ├── moxa-1653.fw
+│   └── moxa-1658.fw
+├── mrvl
+│   ├── pcie8897_uapsta.bin
+│   ├── sd8688.bin
+│   ├── sd8688_helper.bin
+│   ├── sd8787_uapsta.bin
+│   ├── sd8797_uapsta.bin
+│   ├── sd8801_uapsta.bin
+│   ├── sd8887_uapsta.bin
+│   ├── sd8897_uapsta.bin
+│   ├── usb8766_uapsta.bin
+│   ├── usb8797_uapsta.bin
+│   ├── usb8801_uapsta.bin
+│   └── usb8897_uapsta.bin
+├── mt7601u.bin
+├── mt7650.bin
+├── mts_mt9234mu.fw
+├── mts_mt9234zba.fw
+├── mwl8k
+│   ├── fmimage_8366_ap-1.fw
+│   ├── fmimage_8366_ap-2.fw
+│   ├── fmimage_8366_ap-3.fw
+│   ├── fmimage_8366.fw
+│   ├── fmimage_8687.fw
+│   ├── fmimage_8764_ap-1.fw
+│   ├── helper_8366.fw
+│   └── helper_8687.fw
+├── mwlwifi
+│   ├── 88W8864.bin
+│   └── 88W8897.bin
+├── myri10ge_eth_big_z8e.dat
+├── myri10ge_ethp_big_z8e.dat
+├── myri10ge_ethp_z8e.dat
+├── myri10ge_eth_z8e.dat
+├── myri10ge_rss_eth_big_z8e.dat
+├── myri10ge_rss_ethp_big_z8e.dat
+├── myri10ge_rss_ethp_z8e.dat
+├── myri10ge_rss_eth_z8e.dat
+├── myricom
+│   └── lanai.bin
+├── nvidia
+│   ├── gk20a
+│   │   ├── fecs_data.bin
+│   │   ├── fecs_inst.bin
+│   │   ├── gpccs_data.bin
+│   │   ├── gpccs_inst.bin
+│   │   ├── sw_bundle_init.bin
+│   │   ├── sw_ctx.bin
+│   │   ├── sw_method_init.bin
+│   │   └── sw_nonctx.bin
+│   ├── gm200
+│   │   ├── acr
+│   │   │   ├── bl.bin
+│   │   │   ├── ucode_load.bin
+│   │   │   └── ucode_unload.bin
+│   │   └── gr
+│   │       ├── fecs_bl.bin
+│   │       ├── fecs_data.bin
+│   │       ├── fecs_inst.bin
+│   │       ├── fecs_sig.bin
+│   │       ├── gpccs_bl.bin
+│   │       ├── gpccs_data.bin
+│   │       ├── gpccs_inst.bin
+│   │       ├── gpccs_sig.bin
+│   │       ├── sw_bundle_init.bin
+│   │       ├── sw_ctx.bin
+│   │       ├── sw_method_init.bin
+│   │       └── sw_nonctx.bin
+│   ├── gm204
+│   │   ├── acr
+│   │   │   ├── bl.bin -> ../../gm200/acr/bl.bin
+│   │   │   ├── ucode_load.bin -> ../../gm200/acr/ucode_load.bin
+│   │   │   └── ucode_unload.bin -> ../../gm200/acr/ucode_unload.bin
+│   │   └── gr
+│   │       ├── fecs_bl.bin -> ../../gm200/gr/fecs_bl.bin
+│   │       ├── fecs_data.bin
+│   │       ├── fecs_inst.bin -> ../../gm200/gr/fecs_inst.bin
+│   │       ├── fecs_sig.bin
+│   │       ├── gpccs_bl.bin -> ../../gm200/gr/gpccs_bl.bin
+│   │       ├── gpccs_data.bin
+│   │       ├── gpccs_inst.bin -> ../../gm200/gr/gpccs_inst.bin
+│   │       ├── gpccs_sig.bin
+│   │       ├── sw_bundle_init.bin -> ../../gm200/gr/sw_bundle_init.bin
+│   │       ├── sw_ctx.bin -> ../../gm200/gr/sw_ctx.bin
+│   │       ├── sw_method_init.bin -> ../../gm200/gr/sw_method_init.bin
+│   │       └── sw_nonctx.bin -> ../../gm200/gr/sw_nonctx.bin
+│   ├── gm206
+│   │   ├── acr
+│   │   │   ├── bl.bin -> ../../gm200/acr/bl.bin
+│   │   │   ├── ucode_load.bin
+│   │   │   └── ucode_unload.bin
+│   │   └── gr
+│   │       ├── fecs_bl.bin -> ../../gm200/gr/fecs_bl.bin
+│   │       ├── fecs_data.bin
+│   │       ├── fecs_inst.bin -> ../../gm200/gr/fecs_inst.bin
+│   │       ├── fecs_sig.bin
+│   │       ├── gpccs_bl.bin -> ../../gm200/gr/gpccs_bl.bin
+│   │       ├── gpccs_data.bin
+│   │       ├── gpccs_inst.bin -> ../../gm200/gr/gpccs_inst.bin
+│   │       ├── gpccs_sig.bin
+│   │       ├── sw_bundle_init.bin -> ../../gm200/gr/sw_bundle_init.bin
+│   │       ├── sw_ctx.bin -> ../../gm200/gr/sw_ctx.bin
+│   │       ├── sw_method_init.bin -> ../../gm200/gr/sw_method_init.bin
+│   │       └── sw_nonctx.bin -> ../../gm200/gr/sw_nonctx.bin
+│   ├── gm20b
+│   │   ├── acr
+│   │   │   ├── bl.bin
+│   │   │   └── ucode_load.bin
+│   │   └── gr
+│   │       ├── fecs_bl.bin
+│   │       ├── fecs_data.bin
+│   │       ├── fecs_inst.bin
+│   │       ├── fecs_sig.bin
+│   │       ├── gpccs_data.bin
+│   │       ├── gpccs_inst.bin
+│   │       ├── sw_bundle_init.bin
+│   │       ├── sw_ctx.bin
+│   │       ├── sw_method_init.bin -> ../../gm200/gr/sw_method_init.bin
+│   │       └── sw_nonctx.bin
+│   ├── tegra124
+│   │   └── xusb.bin
+│   └── tegra210
+│       └── xusb.bin
+├── ositech
+│   └── Xilinx7OD.bin
+├── phanfw.bin
+├── qat_895xcc.bin
+├── qat_895xcc_mmp.bin
+├── qat_c3xxx.bin
+├── qat_c3xxx_mmp.bin
+├── qat_c62x.bin
+├── qat_c62x_mmp.bin
+├── qat_mmp.bin -> qat_895xcc_mmp.bin
+├── qca
+│   ├── NOTICE.txt
+│   ├── nvm_00130300.bin
+│   ├── nvm_00130302.bin
+│   ├── nvm_usb_00000200.bin
+│   ├── nvm_usb_00000201.bin
+│   ├── nvm_usb_00000300.bin
+│   ├── nvm_usb_00000302.bin
+│   ├── rampatch_00130300.bin
+│   ├── rampatch_00130302.bin
+│   ├── rampatch_usb_00000200.bin
+│   ├── rampatch_usb_00000201.bin
+│   ├── rampatch_usb_00000300.bin
+│   └── rampatch_usb_00000302.bin
+├── qed
+│   ├── qed_init_values_zipped-8.10.5.0.bin
+│   ├── qed_init_values_zipped-8.4.2.0.bin
+│   └── qed_init_values_zipped-8.7.3.0.bin
+├── ql2100_fw.bin
+├── ql2200_fw.bin
+├── ql2300_fw.bin
+├── ql2322_fw.bin
+├── ql2400_fw.bin
+├── ql2500_fw.bin
+├── ql2600_fw.bin
+├── ql2700_fw.bin
+├── ql8300_fw.bin
+├── qlogic
+│   └── isp1000.bin
+├── r128
+├── r8a779x_usb3_v1.dlmem
+├── r8a779x_usb3_v2.dlmem
+├── r8a779x_usb3_v3.dlmem
+├── radeon
+│   ├── ARUBA_me.bin
+│   ├── ARUBA_pfp.bin
+│   ├── ARUBA_rlc.bin
+│   ├── BARTS_mc.bin
+│   ├── BARTS_me.bin
+│   ├── BARTS_pfp.bin
+│   ├── BARTS_smc.bin
+│   ├── bonaire_ce.bin
+│   ├── BONAIRE_ce.bin
+│   ├── BONAIRE_mc2.bin
+│   ├── bonaire_mc.bin
+│   ├── BONAIRE_mc.bin
+│   ├── bonaire_me.bin
+│   ├── BONAIRE_me.bin
+│   ├── bonaire_mec.bin
+│   ├── BONAIRE_mec.bin
+│   ├── bonaire_pfp.bin
+│   ├── BONAIRE_pfp.bin
+│   ├── bonaire_rlc.bin
+│   ├── BONAIRE_rlc.bin
+│   ├── bonaire_sdma1.bin
+│   ├── bonaire_sdma.bin
+│   ├── BONAIRE_sdma.bin
+│   ├── bonaire_smc.bin
+│   ├── BONAIRE_smc.bin
+│   ├── bonaire_uvd.bin
+│   ├── BONAIRE_uvd.bin
+│   ├── bonaire_vce.bin
+│   ├── BONAIRE_vce.bin
+│   ├── BTC_rlc.bin
+│   ├── CAICOS_mc.bin
+│   ├── CAICOS_me.bin
+│   ├── CAICOS_pfp.bin
+│   ├── CAICOS_smc.bin
+│   ├── CAYMAN_mc.bin
+│   ├── CAYMAN_me.bin
+│   ├── CAYMAN_pfp.bin
+│   ├── CAYMAN_rlc.bin
+│   ├── CAYMAN_smc.bin
+│   ├── CEDAR_me.bin
+│   ├── CEDAR_pfp.bin
+│   ├── CEDAR_rlc.bin
+│   ├── CEDAR_smc.bin
+│   ├── CYPRESS_me.bin
+│   ├── CYPRESS_pfp.bin
+│   ├── CYPRESS_rlc.bin
+│   ├── CYPRESS_smc.bin
+│   ├── CYPRESS_uvd.bin
+│   ├── hainan_ce.bin
+│   ├── HAINAN_ce.bin
+│   ├── HAINAN_mc2.bin
+│   ├── hainan_mc.bin
+│   ├── HAINAN_mc.bin
+│   ├── hainan_me.bin
+│   ├── HAINAN_me.bin
+│   ├── hainan_pfp.bin
+│   ├── HAINAN_pfp.bin
+│   ├── hainan_rlc.bin
+│   ├── HAINAN_rlc.bin
+│   ├── hainan_smc.bin
+│   ├── HAINAN_smc.bin
+│   ├── hawaii_ce.bin
+│   ├── HAWAII_ce.bin
+│   ├── HAWAII_mc2.bin
+│   ├── hawaii_mc.bin
+│   ├── HAWAII_mc.bin
+│   ├── hawaii_me.bin
+│   ├── HAWAII_me.bin
+│   ├── hawaii_mec.bin
+│   ├── HAWAII_mec.bin
+│   ├── hawaii_pfp.bin
+│   ├── HAWAII_pfp.bin
+│   ├── hawaii_rlc.bin
+│   ├── HAWAII_rlc.bin
+│   ├── hawaii_sdma1.bin
+│   ├── hawaii_sdma.bin
+│   ├── HAWAII_sdma.bin
+│   ├── hawaii_smc.bin
+│   ├── HAWAII_smc.bin
+│   ├── hawaii_uvd.bin
+│   ├── hawaii_vce.bin
+│   ├── JUNIPER_me.bin
+│   ├── JUNIPER_pfp.bin
+│   ├── JUNIPER_rlc.bin
+│   ├── JUNIPER_smc.bin
+│   ├── kabini_ce.bin
+│   ├── KABINI_ce.bin
+│   ├── kabini_me.bin
+│   ├── KABINI_me.bin
+│   ├── kabini_mec.bin
+│   ├── KABINI_mec.bin
+│   ├── kabini_pfp.bin
+│   ├── KABINI_pfp.bin
+│   ├── kabini_rlc.bin
+│   ├── KABINI_rlc.bin
+│   ├── kabini_sdma1.bin
+│   ├── kabini_sdma.bin
+│   ├── KABINI_sdma.bin
+│   ├── kabini_uvd.bin
+│   ├── kabini_vce.bin
+│   ├── kaveri_ce.bin
+│   ├── KAVERI_ce.bin
+│   ├── kaveri_me.bin
+│   ├── KAVERI_me.bin
+│   ├── kaveri_mec2.bin
+│   ├── kaveri_mec.bin
+│   ├── KAVERI_mec.bin
+│   ├── kaveri_pfp.bin
+│   ├── KAVERI_pfp.bin
+│   ├── kaveri_rlc.bin
+│   ├── KAVERI_rlc.bin
+│   ├── kaveri_sdma1.bin
+│   ├── kaveri_sdma.bin
+│   ├── KAVERI_sdma.bin
+│   ├── kaveri_uvd.bin
+│   ├── kaveri_vce.bin
+│   ├── mullins_ce.bin
+│   ├── MULLINS_ce.bin
+│   ├── mullins_me.bin
+│   ├── MULLINS_me.bin
+│   ├── mullins_mec.bin
+│   ├── MULLINS_mec.bin
+│   ├── mullins_pfp.bin
+│   ├── MULLINS_pfp.bin
+│   ├── mullins_rlc.bin
+│   ├── MULLINS_rlc.bin
+│   ├── mullins_sdma1.bin
+│   ├── mullins_sdma.bin
+│   ├── MULLINS_sdma.bin
+│   ├── mullins_uvd.bin
+│   ├── mullins_vce.bin
+│   ├── oland_ce.bin
+│   ├── OLAND_ce.bin
+│   ├── OLAND_mc2.bin
+│   ├── oland_mc.bin
+│   ├── OLAND_mc.bin
+│   ├── oland_me.bin
+│   ├── OLAND_me.bin
+│   ├── oland_pfp.bin
+│   ├── OLAND_pfp.bin
+│   ├── oland_rlc.bin
+│   ├── OLAND_rlc.bin
+│   ├── oland_smc.bin
+│   ├── OLAND_smc.bin
+│   ├── PALM_me.bin
+│   ├── PALM_pfp.bin
+│   ├── pitcairn_ce.bin
+│   ├── PITCAIRN_ce.bin
+│   ├── PITCAIRN_mc2.bin
+│   ├── pitcairn_mc.bin
+│   ├── PITCAIRN_mc.bin
+│   ├── pitcairn_me.bin
+│   ├── PITCAIRN_me.bin
+│   ├── pitcairn_pfp.bin
+│   ├── PITCAIRN_pfp.bin
+│   ├── pitcairn_rlc.bin
+│   ├── PITCAIRN_rlc.bin
+│   ├── pitcairn_smc.bin
+│   ├── PITCAIRN_smc.bin
+│   ├── R600_rlc.bin
+│   ├── R600_uvd.bin
+│   ├── R700_rlc.bin
+│   ├── REDWOOD_me.bin
+│   ├── REDWOOD_pfp.bin
+│   ├── REDWOOD_rlc.bin
+│   ├── REDWOOD_smc.bin
+│   ├── RS780_uvd.bin
+│   ├── RV710_smc.bin
+│   ├── RV710_uvd.bin
+│   ├── RV730_smc.bin
+│   ├── RV740_smc.bin
+│   ├── RV770_smc.bin
+│   ├── RV770_uvd.bin
+│   ├── SUMO2_me.bin
+│   ├── SUMO2_pfp.bin
+│   ├── SUMO_me.bin
+│   ├── SUMO_pfp.bin
+│   ├── SUMO_rlc.bin
+│   ├── SUMO_uvd.bin
+│   ├── tahiti_ce.bin
+│   ├── TAHITI_ce.bin
+│   ├── TAHITI_mc2.bin
+│   ├── tahiti_mc.bin
+│   ├── TAHITI_mc.bin
+│   ├── tahiti_me.bin
+│   ├── TAHITI_me.bin
+│   ├── tahiti_pfp.bin
+│   ├── TAHITI_pfp.bin
+│   ├── tahiti_rlc.bin
+│   ├── TAHITI_rlc.bin
+│   ├── tahiti_smc.bin
+│   ├── TAHITI_smc.bin
+│   ├── TAHITI_uvd.bin
+│   ├── TAHITI_vce.bin
+│   ├── TURKS_mc.bin
+│   ├── TURKS_me.bin
+│   ├── TURKS_pfp.bin
+│   ├── TURKS_smc.bin
+│   ├── verde_ce.bin
+│   ├── VERDE_ce.bin
+│   ├── VERDE_mc2.bin
+│   ├── verde_mc.bin
+│   ├── VERDE_mc.bin
+│   ├── verde_me.bin
+│   ├── VERDE_me.bin
+│   ├── verde_pfp.bin
+│   ├── VERDE_pfp.bin
+│   ├── verde_rlc.bin
+│   ├── VERDE_rlc.bin
+│   ├── verde_smc.bin
+│   └── VERDE_smc.bin
+├── README
+├── rp2.fw
+├── rsi_91x.fw
+├── rt2561.bin
+├── rt2561s.bin
+├── rt2661.bin
+├── rt2860.bin
+├── rt2870.bin
+├── rt3070.bin -> rt2870.bin
+├── rt3071.bin
+├── rt3090.bin -> rt2860.bin
+├── rt3290.bin
+├── rt73.bin
+├── RTL8192E
+│   ├── boot.img
+│   ├── data.img
+│   └── main.img
+├── rtl_bt
+│   ├── rtl8192ee_fw.bin
+│   ├── rtl8192eu_fw.bin
+│   ├── rtl8723a_fw.bin
+│   ├── rtl8723b_fw.bin
+│   ├── rtl8761a_fw.bin
+│   ├── rtl8812ae_fw.bin
+│   └── rtl8821a_fw.bin
+├── rtl_nic
+│   ├── rtl8105e-1.fw
+│   ├── rtl8106e-1.fw
+│   ├── rtl8106e-2.fw
+│   ├── rtl8107e-1.fw
+│   ├── rtl8107e-2.fw
+│   ├── rtl8168d-1.fw
+│   ├── rtl8168d-2.fw
+│   ├── rtl8168e-1.fw
+│   ├── rtl8168e-2.fw
+│   ├── rtl8168e-3.fw
+│   ├── rtl8168f-1.fw
+│   ├── rtl8168f-2.fw
+│   ├── rtl8168g-1.fw
+│   ├── rtl8168g-2.fw
+│   ├── rtl8168g-3.fw
+│   ├── rtl8168h-1.fw
+│   ├── rtl8168h-2.fw
+│   ├── rtl8402-1.fw
+│   ├── rtl8411-1.fw
+│   └── rtl8411-2.fw
+├── rtlwifi
+│   ├── rtl8188efw.bin
+│   ├── rtl8188eufw.bin
+│   ├── rtl8192cfw.bin
+│   ├── rtl8192cfwU_B.bin
+│   ├── rtl8192cfwU.bin
+│   ├── rtl8192cufw_A.bin
+│   ├── rtl8192cufw_B.bin
+│   ├── rtl8192cufw.bin
+│   ├── rtl8192cufw_TMSC.bin
+│   ├── rtl8192defw.bin
+│   ├── rtl8192eefw.bin
+│   ├── rtl8192eu_ap_wowlan.bin
+│   ├── rtl8192eu_nic.bin
+│   ├── rtl8192eu_wowlan.bin
+│   ├── rtl8192sefw.bin
+│   ├── rtl8712u.bin
+│   ├── rtl8723aufw_A.bin
+│   ├── rtl8723aufw_B.bin
+│   ├── rtl8723aufw_B_NoBT.bin
+│   ├── rtl8723befw.bin
+│   ├── rtl8723bu_ap_wowlan.bin
+│   ├── rtl8723bu_nic.bin
+│   ├── rtl8723bu_wowlan.bin
+│   ├── rtl8723fw_B.bin
+│   ├── rtl8723fw.bin
+│   ├── rtl8821aefw.bin
+│   └── rtl8821aefw_wowlan.bin
+├── s2250.fw -> go7007/s2250-2.fw
+├── s2250_loader.fw -> go7007/s2250-1.fw
+├── s5p-mfc.fw
+├── s5p-mfc-v6.fw
+├── s5p-mfc-v6-v2.fw
+├── s5p-mfc-v7.fw
+├── s5p-mfc-v8.fw
+├── sb16
+│   ├── alaw_main.csp
+│   ├── ima_adpcm_capture.csp
+│   ├── ima_adpcm_init.csp
+│   ├── ima_adpcm_playback.csp
+│   └── mulaw_main.csp
+├── sdd_sagrad_1091_1098.bin
+├── slicoss
+│   ├── gbdownload.sys
+│   ├── gbrcvucode.sys
+│   ├── oasisdbgdownload.sys
+│   ├── oasisdownload.sys
+│   └── oasisrcvucode.sys
+├── sms1xxx-hcw-55xxx-dvbt-02.fw
+├── sms1xxx-hcw-55xxx-isdbt-02.fw
+├── sms1xxx-nova-a-dvbt-01.fw
+├── sms1xxx-nova-b-dvbt-01.fw
+├── sms1xxx-stellar-dvbt-01.fw
+├── sun
+├── sxg
+│   ├── saharadbgdownloadB.sys
+│   └── saharadownloadB.sys
+├── TDA7706_OM_v2.5.1_boot.txt
+├── TDA7706_OM_v3.0.2_boot.txt
+├── tdmb_nova_12mhz.inp
+├── tehuti
+├── ti-connectivity
+│   ├── TIInit_7.2.31.bts
+│   ├── wl1251-fw.bin
+│   ├── wl1251-nvs.bin
+│   ├── wl1271-fw-2.bin
+│   ├── wl1271-fw-ap.bin
+│   ├── wl1271-fw.bin
+│   ├── wl1271-nvs.bin -> wl127x-nvs.bin
+│   ├── wl127x-fw-3.bin
+│   ├── wl127x-fw-4-mr.bin
+│   ├── wl127x-fw-4-plt.bin
+│   ├── wl127x-fw-4-sr.bin
+│   ├── wl127x-fw-5-mr.bin
+│   ├── wl127x-fw-5-plt.bin
+│   ├── wl127x-fw-5-sr.bin
+│   ├── wl127x-fw-plt-3.bin
+│   ├── wl127x-nvs.bin
+│   ├── wl128x-fw-3.bin
+│   ├── wl128x-fw-4-mr.bin
+│   ├── wl128x-fw-4-plt.bin
+│   ├── wl128x-fw-4-sr.bin
+│   ├── wl128x-fw-5-mr.bin
+│   ├── wl128x-fw-5-plt.bin
+│   ├── wl128x-fw-5-sr.bin
+│   ├── wl128x-fw-ap.bin
+│   ├── wl128x-fw.bin
+│   ├── wl128x-fw-plt-3.bin
+│   ├── wl128x-nvs.bin
+│   ├── wl12xx-nvs.bin -> wl127x-nvs.bin
+│   ├── wl18xx-fw-2.bin
+│   ├── wl18xx-fw-3.bin
+│   ├── wl18xx-fw-4.bin
+│   └── wl18xx-fw.bin
+├── tigon
+│   └── tg357766.bin
+├── ti-keystone
+│   └── ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin
+├── tlg2300_firmware.bin
+├── tr_smctr.bin
+├── ttusb-budget
+├── ueagle-atm
+│   ├── 930-fpga.bin
+│   ├── adi930.fw
+│   ├── CMV4p.bin.v2
+│   ├── CMV9i.bin
+│   ├── CMV9p.bin
+│   ├── CMVei.bin
+│   ├── CMVeiWO.bin
+│   ├── CMVep.bin
+│   ├── CMVepES03.bin
+│   ├── CMVepES.bin
+│   ├── CMVepFR04.bin
+│   ├── CMVepFR10.bin
+│   ├── CMVepFR.bin
+│   ├── CMVepIT.bin
+│   ├── CMVepWO.bin
+│   ├── DSP4p.bin
+│   ├── DSP9i.bin
+│   ├── DSP9p.bin
+│   ├── DSPei.bin
+│   ├── DSPep.bin
+│   ├── eagleI.fw
+│   ├── eagleII.fw
+│   ├── eagleIII.fw
+│   └── eagleIV.fw
+├── usbdux
+│   ├── fx2-include.asm
+│   ├── Makefile_dux
+│   ├── usbduxfast_firmware.asm
+│   ├── usbdux_firmware.asm
+│   └── usbduxsigma_firmware.asm
+├── usbduxfast_firmware.bin
+├── usbdux_firmware.bin
+├── usbduxsigma_firmware.bin
+├── v4l-cx231xx-avcore-01.fw
+├── v4l-cx23418-apu.fw
+├── v4l-cx23418-cpu.fw
+├── v4l-cx23418-dig.fw
+├── v4l-cx23885-avcore-01.fw
+├── v4l-cx25840.fw
+├── vicam
+│   └── firmware.fw
+├── vntwusb.fw
+├── vxge
+│   ├── X3fw.ncf
+│   └── X3fw-pxe.ncf
+├── wsm_22.bin
+├── yam
+│   ├── 1200.bin
+│   └── 9600.bin
+└── yamaha
+    └── yss225_registers.bin
+
+136 directories, 1264 files
