@@ -1,8 +1,3 @@
-// InstructionSet.cpp
-// Compile by using: cl /EHsc /W4 InstructionSet.cpp
-// processor: x86, x64
-// Uses the __cpuid intrinsic to get information about
-// CPU extended instruction set support.
 #include "pch.h"
 #include <iostream>
 #include <iomanip>
@@ -60,6 +55,7 @@ public:
     static bool AVX512F(void) { return CPU_Rep.f_7_EBX_[16]; }
     static bool RDSEED(void) { return CPU_Rep.f_7_EBX_[18]; }
     static bool ADX(void) { return CPU_Rep.f_7_EBX_[19]; }
+	static bool IPT(void) { return CPU_Rep.f_7_EBX_[25]; }
     static bool AVX512PF(void) { return CPU_Rep.f_7_EBX_[26]; }
     static bool AVX512ER(void) { return CPU_Rep.f_7_EBX_[27]; }
     static bool AVX512CD(void) { return CPU_Rep.f_7_EBX_[28]; }
@@ -91,16 +87,44 @@ private:
             nExIds_{ 0 },
             isIntel_{ false },
             isAMD_{ false },
+			Stepping{ 0 },
+			Model{ 0 },
+			Family{ 0 },
+			BrandIndex{ 0 },
+			CflushLineSize{ 0 },
+			MaxAddrID{ 0 },
+			InitAPICID{ 0 },
+			isCR3{ false },
+			isPSBAndCAM{ false },
+			isADDRCFG{ false },
+			isMTC{ false },
+			isTOPA{ false },
+			isTOPAMul{ false },
+			isSingle{ false },
+			isLIP{ false },
+			addr_range{ 0 },
+			mtc_freq_mask{ 0 },
+			cyc_thresh_mask{ 0 },
+			psb_freq_mask{ 0 },
+			bus_freq{ 0.0 },
+			f_1_EAX_{ 0 },
+			f_1_EBX_{ 0 },
             f_1_ECX_{ 0 },
             f_1_EDX_{ 0 },
             f_7_EBX_{ 0 },
             f_7_ECX_{ 0 },
+			f_14_EBX_{ 0 },
+			f_14_ECX_{ 0 },
+			f_141_EAX_{ 0 },
+			f_141_EBX_{ 0 },
+			f_15_EAX_{ 0 },
+			f_15_EBX_{ 0 },
             f_81_ECX_{ 0 },
             f_81_EDX_{ 0 },
             data_{},
             extdata_{}
         {
-            //int cpuInfo[4] = {-1};
+            //int cpui[4] = {-1};
             std::array<int, 4> cpui;
 
             // Calling __cpuid with 0x0 as the function_id argument
@@ -117,15 +141,6 @@ private:
 					<< " b=" << std::hex << std::setw(8) << std::setfill('0') << cpui[1] 
 					<< " c=" << std::hex << std::setw(8) << std::setfill('0') << cpui[2] 
 					<< " d=" << std::hex << std::setw(8) << std::setfill('0') << cpui[3] << std::endl;
-
-				if (0x14 == i && 1 == cpui[0]) {
-					__cpuidex(cpui.data(), i, 1);
-					std::cout << "cpuid[" << std::hex << std::setw(8) << std::setfill('0') << i
-						<< "][1] a=" << std::hex << std::setw(8) << std::setfill('0') << cpui[0]
-						<< " b=" << std::hex << std::setw(8) << std::setfill('0') << cpui[1]
-						<< " c=" << std::hex << std::setw(8) << std::setfill('0') << cpui[2]
-						<< " d=" << std::hex << std::setw(8) << std::setfill('0') << cpui[3] << std::endl;
-				}
             }
 
             // Capture vendor string
@@ -147,8 +162,31 @@ private:
             // load bitset with flags for function 0x00000001
             if (nIds_ >= 1)
             {
-                f_1_ECX_ = data_[1][2];
-                f_1_EDX_ = data_[1][3];
+				f_1_EAX_ = data_[1][0];
+				f_1_EBX_ = data_[1][1];
+				f_1_ECX_ = data_[1][2];
+				f_1_EDX_ = data_[1][3];
+
+				Stepping = f_1_EAX_ & 0xf;
+				Model = (f_1_EAX_ >> 4) & 0xf;
+				Family = (f_1_EAX_ >> 8) & 0xf;
+				if (Family == 6 || Family == 0xf)
+					Model += ((f_1_EAX_ >> 16) & 0xf) << 4;
+				if (Family == 0xf)
+					Family += (f_1_EAX_ >> 20) & 0xff;
+
+				BrandIndex = f_1_EBX_ & 0xff;
+				CflushLineSize = (f_1_EBX_ >> 8) & 0xff;
+				MaxAddrID = (f_1_EBX_ >> 16) & 0xff;
+				InitAPICID = (f_1_EBX_ >> 24) & 0xff;                
+
+				std::cout << "Stepping=0x" << std::hex << std::setw(2) << std::setfill('0') << Stepping << std::endl;
+				std::cout << "Model=0x" << std::hex << std::setw(8) << std::setfill('0') << Model << std::endl;
+				std::cout << "Family=0x" << std::hex << std::setw(8) << std::setfill('0') << Family << std::endl;
+				std::cout << "BrandIndex=0x" << std::hex << std::setw(2) << std::setfill('0') << BrandIndex << std::endl;
+				std::cout << "CflushLineSize=0x" << std::hex << std::setw(2) << std::setfill('0') << CflushLineSize << std::endl;
+				std::cout << "MaxAddrID=0x" << std::hex << std::setw(2) << std::setfill('0') << MaxAddrID << std::endl;
+				std::cout << "InitAPICID=0x" << std::hex << std::setw(2) << std::setfill('0') << InitAPICID << std::endl;
             }
 
             // load bitset with flags for function 0x00000007
@@ -157,6 +195,81 @@ private:
                 f_7_EBX_ = data_[7][1];
                 f_7_ECX_ = data_[7][2];
             }
+
+			// load bitset with flags for function 0x000000014
+			if (nIds_ >= 0x14)
+			{
+				f_14_EBX_ = data_[0x14][1];
+				f_14_ECX_ = data_[0x14][2];
+
+				if (f_14_EBX_[0]) {
+					isCR3 = true;
+				}
+				if (f_14_EBX_[1]) {
+					isPSBAndCAM = true;
+				}
+				if (f_14_EBX_[2]) {
+					isADDRCFG = true;
+				}
+				if (f_14_EBX_[3]) {
+					isMTC = true;
+				}
+
+				if (f_14_ECX_[0]) {
+					isTOPA = true;
+				}
+				if (f_14_ECX_[1]) {
+					isTOPAMul = true;
+				}
+				if (f_14_ECX_[2]) {
+					isSingle = true;
+				}
+				if (f_14_EBX_[31]) {
+					isLIP = true;
+				}
+
+				std::cout << "isCR3=" << isCR3 << std::endl;
+				std::cout << "isPSBAndCAM=" << isPSBAndCAM << std::endl;
+				std::cout << "isADDRCFG=" << isADDRCFG << std::endl;
+				std::cout << "isMTC=" << isMTC << std::endl;
+				std::cout << "isTOPA=" << isTOPA << std::endl;
+				std::cout << "isTOPAMul=" << isTOPAMul << std::endl;
+				std::cout << "isSingle=" << isSingle << std::endl;
+				std::cout << "isLIP=" << isLIP << std::endl;
+
+				if (isPSBAndCAM && isMTC && data_[0x14][0] >= 1) {
+					__cpuidex(cpui.data(), 0x14, 1);
+					data_.push_back(cpui);
+					std::cout << "cpuid[00000014][1] a=" << std::hex << std::setw(8) << std::setfill('0') << cpui[0]
+						<< " b=" << std::hex << std::setw(8) << std::setfill('0') << cpui[1]
+						<< " c=" << std::hex << std::setw(8) << std::setfill('0') << cpui[2]
+						<< " d=" << std::hex << std::setw(8) << std::setfill('0') << cpui[3] << std::endl;
+
+					f_141_EAX_ = cpui[0];
+					f_141_EBX_ = cpui[1];
+					addr_range = f_141_EAX_ & 0x3;
+					mtc_freq_mask = (f_141_EAX_ >> 16) & 0xffff;
+					cyc_thresh_mask = f_141_EBX_ & 0xffff;
+					psb_freq_mask = (f_141_EBX_ >> 16) & 0xffff;
+
+					std::cout << "addr_range=0x" << std::hex << std::setw(2) << std::setfill('0') << addr_range << std::endl;
+					std::cout << "mtc_freq_mask=0x" << std::hex << std::setw(2) << std::setfill('0') << mtc_freq_mask << std::endl;
+					std::cout << "cyc_thresh_mask=0x" << std::hex << std::setw(2) << std::setfill('0') << cyc_thresh_mask << std::endl;
+					std::cout << "psb_freq_mask=0x" << std::hex << std::setw(2) << std::setfill('0') << psb_freq_mask << std::endl;
+				}
+			}
+
+			// load bitset with flags for function 0x000000015
+			if (nIds_ >= 0x15)
+			{
+				f_15_EAX_ = data_[0x15][0];
+				f_15_EBX_ = data_[0x15][1];
+
+				if (f_15_EAX_ && f_15_EBX_)
+					bus_freq = (float)1.0 / ((float)f_15_EAX_ / (float)f_15_EBX_);
+
+				std::cout << "bus_freq=" << std::setprecision(8) << bus_freq << std::endl;
+			}
 
             // Calling __cpuid with 0x80000000 as the function_id argument
             // gets the number of the highest valid extended ID.
@@ -200,10 +313,38 @@ private:
         std::string brand_;
         bool isIntel_;
         bool isAMD_;
+		unsigned int Stepping;
+		unsigned int Model;
+		unsigned int Family;
+		unsigned int BrandIndex;
+		unsigned int CflushLineSize;
+		unsigned int MaxAddrID;
+		unsigned int InitAPICID;
+		bool isCR3;
+		bool isPSBAndCAM;
+		bool isADDRCFG;
+		bool isMTC;
+		bool isTOPA;
+		bool isTOPAMul;
+		bool isSingle;
+		bool isLIP;
+		unsigned short addr_range;
+		unsigned short mtc_freq_mask;
+		unsigned short cyc_thresh_mask;
+		unsigned short psb_freq_mask;
+		float bus_freq;
+		unsigned int  f_1_EAX_;
+		unsigned int  f_1_EBX_;
         std::bitset<32> f_1_ECX_;
         std::bitset<32> f_1_EDX_;
         std::bitset<32> f_7_EBX_;
         std::bitset<32> f_7_ECX_;
+		std::bitset<32> f_14_EBX_;
+		std::bitset<32> 	f_14_ECX_;
+		unsigned int  f_141_EAX_;
+		unsigned int  f_141_EBX_;
+		unsigned int  f_15_EAX_;
+		unsigned int  f_15_EBX_;
         std::bitset<32> f_81_ECX_;
         std::bitset<32> f_81_EDX_;
         std::vector<std::array<int, 4>> data_;
@@ -237,6 +378,7 @@ int main(int argc, char * argv[])
     support_message("AVX512ER",    InstructionSet::AVX512ER());
     support_message("AVX512F",     InstructionSet::AVX512F());
     support_message("AVX512PF",    InstructionSet::AVX512PF());
+	support_message("IPT", InstructionSet::IPT());
     support_message("BMI1",        InstructionSet::BMI1());
     support_message("BMI2",        InstructionSet::BMI2());
     support_message("CLFSH",       InstructionSet::CLFSH());
@@ -278,5 +420,5 @@ int main(int argc, char * argv[])
     support_message("XOP",         InstructionSet::XOP());
     support_message("XSAVE",       InstructionSet::XSAVE());
 	
-	return 0;
+    return 0;
 }
