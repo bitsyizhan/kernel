@@ -55,7 +55,7 @@ public:
     static bool AVX512F(void) { return CPU_Rep.f_7_EBX_[16]; }
     static bool RDSEED(void) { return CPU_Rep.f_7_EBX_[18]; }
     static bool ADX(void) { return CPU_Rep.f_7_EBX_[19]; }
-	static bool IPT(void) { return CPU_Rep.f_7_EBX_[25]; }
+    static bool IPT(void) { return CPU_Rep.f_7_EBX_[25]; }
     static bool AVX512PF(void) { return CPU_Rep.f_7_EBX_[26]; }
     static bool AVX512ER(void) { return CPU_Rep.f_7_EBX_[27]; }
     static bool AVX512CD(void) { return CPU_Rep.f_7_EBX_[28]; }
@@ -340,7 +340,7 @@ private:
         std::bitset<32> f_7_EBX_;
         std::bitset<32> f_7_ECX_;
 		std::bitset<32> f_14_EBX_;
-		std::bitset<32> 	f_14_ECX_;
+		std::bitset<32> f_14_ECX_;
 		unsigned int  f_141_EAX_;
 		unsigned int  f_141_EBX_;
 		unsigned int  f_15_EAX_;
@@ -378,7 +378,7 @@ int main(int argc, char * argv[])
     support_message("AVX512ER",    InstructionSet::AVX512ER());
     support_message("AVX512F",     InstructionSet::AVX512F());
     support_message("AVX512PF",    InstructionSet::AVX512PF());
-	support_message("IPT", InstructionSet::IPT());
+    support_message("IPT", InstructionSet::IPT());
     support_message("BMI1",        InstructionSet::BMI1());
     support_message("BMI2",        InstructionSet::BMI2());
     support_message("CLFSH",       InstructionSet::CLFSH());
@@ -419,6 +419,6 @@ int main(int argc, char * argv[])
     support_message("TBM",         InstructionSet::TBM());
     support_message("XOP",         InstructionSet::XOP());
     support_message("XSAVE",       InstructionSet::XSAVE());
-	
+
     return 0;
 }
